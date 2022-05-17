@@ -5,6 +5,7 @@ import Avatar from '../../assets/avatar.jpg';
 import HeaderSocials from './HeaderSocials';
 
 
+
 const Header = () => {
   return (
     <header>
@@ -14,7 +15,7 @@ const Header = () => {
         <h5>Frontend Developer</h5>
         <CTA />
         <HeaderSocials />
-
+        
         <div className='me'>
           <img src={Avatar} alt="Это я" />
         </div>
