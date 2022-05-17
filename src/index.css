@@ -1,13 +1,145 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-bg: #348747;
+  --color-bg-variant: #7cc040;
+  /* --color-primary: #efea48; */
+  --color-primary-variant: #f6f37f;
+  --color-blue: #04b8cc;
+  --color-white: #ffffff;
+
+  --transition: all 400ms ease;
+
+  --contaner-width-lg: 75%;
+  --contaner-width-md: 86%;
+  --contaner-width-sd: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Poor Story', cursive;
+  background: var(--color-bg);
+  color: var(--color-blue);
+  line-height: 1.7;
+}
+
+.container {
+  width: var(--contaner-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-primary-variant);
+}
+
+section > h2 {
+  color: var(--color-blue);
+  margin-bottom: 3rem;
+}
+
+.text-blue {
+  color: var(--color-white);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-blue);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 1px solid var(--color-blue);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-primary-variant);
+  border-color: transparent;
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 20px var(--color-primary-variant);
+}
+
+.btn-primary {
+  background: var(--color-primary-variant);
+  color: var(--color-blue);
+}
+
+.btn-primary:hover {
+  color: var(--color-primary-variant);
+  box-shadow: 0 0 20px var(--color-blue);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Медиазапросы средние девайсы */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--contaner-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* Медиазапросы малые девайсы */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--contaner-width-sd);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
