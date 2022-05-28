@@ -71,6 +71,7 @@ textarea {
 /* Медиазапросы малые девайсы */
 @media screen and (max-width: 600px) {
   .container.contact__container {
-    width: var(--container-width-sd);
+    width: var(--container-width-sd); 
+    padding: 1rem;
   }
 }

@@ -11,7 +11,7 @@ const Services = () => {
       <div className='container services__container'>
         <article className='services'>
           <div className="services__head">
-            <h3>HTML/CSS</h3>
+            <h3>Общее</h3>
           </div>
 
           <ul className='services__list'>
@@ -29,7 +29,11 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Медиа-запросы</p>
+              <p>HTML/CSS</p>
+            </li>
+            <li>
+              <BiCheck className='services__list-icon' />
+              <p>Git</p>
             </li>
           </ul>
         </article>
@@ -50,15 +54,15 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Grid/Flex</p>
+              <p>ES6</p>
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Медиа-запросы</p>
+              <p>Promise</p>
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Медиа-запросы</p>
+              <p>Async/await</p>
             </li>
           </ul>
         </article>
@@ -71,19 +75,19 @@ const Services = () => {
           <ul className='services__list'>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Верстка</p>
+              <p>Основные концепции</p>
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Препроцессор Sass</p>
+              <p>Постраничная навигация</p>
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Grid/Flex</p>
+              <p>Сортировка/поиск</p>
             </li>
             <li>
               <BiCheck className='services__list-icon' />
-              <p>Медиа-запросы</p>
+              <p>React Hooks</p>
             </li>
           </ul>
         </article>

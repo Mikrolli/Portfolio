@@ -71,11 +71,26 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
+
+  
 
   .header__socials,
   .scroll__down {
     display: none;
   }
 }
+
+/* @media screen and (max-width: 1680px) {
+  header {
+    height: 100vh;
+  }
+
+  .me {
+    height: 50%;
+    width: 50%;
+    left: calc(50% - 12.4rem);
+    margin-top: 25%;
+  }
+} */

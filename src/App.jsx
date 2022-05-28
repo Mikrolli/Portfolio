@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
@@ -10,8 +10,17 @@ import Footer from './components/footer/Footer';
 import ParticlesBackground from './components/particlesBackground/ParticlesBackground';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById('spinner')
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display='none';
+      setLoading(false)
+    }, 5000)
+  }
   return (
-    <>
+    !loading && (
+      <>
     <ParticlesBackground />
       <Header />
       <Nav />
@@ -22,6 +31,7 @@ const App = () => {
       <Contact />
       <Footer />
     </>
+    )
   )
 };
 

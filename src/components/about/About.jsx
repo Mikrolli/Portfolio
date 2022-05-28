@@ -1,16 +1,11 @@
 import React from 'react';
 import './about.css';
-/* import ME from '../../assets/parachute.jpg'; */
+import ME from '../../assets/images/parachute.jpg';
 import { MdOutlineParagliding } from 'react-icons/md';
 import { GiCat } from 'react-icons/gi';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
 
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
 
-import { GalleryList } from '../../mocks/GalleryList';
 
 const About = () => {
   return (
@@ -19,21 +14,12 @@ const About = () => {
       <h2>Немного о себе</h2>
 
       <div className="container about__container">
-        <Swiper className="about__me"
-          modules={[Pagination]}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-        >
-          {
-            GalleryList.map(({ id, title }) => {
-              return (
-                <SwiperSlide  className="about__me-image">
-                  <img src={id} alt={title} />
-                </SwiperSlide>
-              )
-            })
-          }
-        </Swiper>
+
+      <div className='about__me'>
+        <div className='about__me-image'>
+          <img src={ME} alt="" />
+        </div>
+      </div>
 
         <div className='about__content'>
           <div className="about__cards">

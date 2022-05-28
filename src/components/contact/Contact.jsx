@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsTelegram } from 'react-icons/bs';
-import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { BiMobileVibration } from 'react-icons/bi';
 
 const Contact = () => {
   return (
@@ -27,10 +27,10 @@ const Contact = () => {
             </article>
 
             <article className='contact__option'>
-              <AiOutlineWhatsApp className='contact__option-icon' />
-              <h4>Whats App</h4>
+              <BiMobileVibration className='contact__option-icon' />
+              <h4>Telephone</h4>
               <h5>+7 (910) 973-96-46</h5>
-              <a href="https://api.whatsapp.com/send?+79109739646" target="_blank">Написать</a>
+              <a href="tel:+79109739646" target="_blank">Позвонить</a>
             </article>
           </div>
           <form action=''>
