@@ -23,9 +23,9 @@ export const PortfolioList =[
   },
   {
     id: 4,
-    image: 'https://inquisitive-chaja-3e8e5b.netlify.app/img/nerds-illustration.png',
-    title: 'Первый учебный проект',
-    github: 'https://github.com/Mikrolli/Nerds',
+    image: 'https://res.cloudinary.com/dxoxemiet/image/upload/c_scale,h_208,w_360/v1653829851/Screenshot_1_tplifs.png',
+    title: 'KeksOgram',
+    github: 'https://github.com/Mikrolli/Kekstagram',
     demo: 'https://inquisitive-chaja-3e8e5b.netlify.app/index.html'
   },
   {

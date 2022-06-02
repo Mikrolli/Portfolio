@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsTelegram } from 'react-icons/bs';
 import { BiMobileVibration } from 'react-icons/bi';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_y6cyye3', 'template_50zuert', form.current, 'IZ_4mTvJcQ5npv15n');
+
+    e.target.reset()
+  };
+
   return (
     <section id='contact'>
       <h5>Время ответа - 30 минут.</h5>
@@ -33,7 +44,7 @@ const Contact = () => {
               <a href="tel:+79109739646" target="_blank">Позвонить</a>
             </article>
           </div>
-          <form action=''>
+          <form ref={form} onSubmit={sendEmail}>
             <input type='text' name='name' placeholder='Ваше Фио' required />
             <input type='email' name='email' placeholder='Ваша почта' required />
             <textarea name="message" rows="7" placeholder='Введите ваше сообщение' required ></textarea>

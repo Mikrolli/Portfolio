@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer';
 import ParticlesBackground from './components/particlesBackground/ParticlesBackground';
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  /* const [loading, setLoading] = useState(true);
   const spinner = document.getElementById('spinner')
   if (spinner) {
     setTimeout(() => {
@@ -18,8 +18,8 @@ const App = () => {
       setLoading(false)
     }, 5000)
   }
+  !loading && () */
   return (
-    !loading && (
       <>
     <ParticlesBackground />
       <Header />
@@ -31,7 +31,6 @@ const App = () => {
       <Contact />
       <Footer />
     </>
-    )
   )
 };
 
