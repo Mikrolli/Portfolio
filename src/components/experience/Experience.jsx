@@ -67,7 +67,7 @@ const Experience = () => {
               <ImBooks className='experience__details-icon' />
               <div>
               <h4>Книги</h4>
-              <small className='text-blue'>По книгам может изучить почти все</small>
+              <small className='text-blue'>Каждый день</small>
               </div>
             </article>
             <article className='experience__details'>

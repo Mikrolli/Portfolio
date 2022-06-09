@@ -38,7 +38,7 @@ const About = () => {
             <article className='about__card'>
               <HiOutlineDesktopComputer className='about__icon' />
               <h5>Опыт</h5>
-              <small>1.5 года, и как же мне это нравится.</small>
+              <small>1.5 года.</small>
             </article>
           </div>
 

@@ -8,10 +8,12 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
+  text-transform: uppercase;
 }
 
 .header__container > h5, h1 {
   text-shadow: var(--color-primary-variant) 0 0 15px;
+  font-weight: bold;
 }
 
 /* CTA */
@@ -81,16 +83,3 @@ header {
     display: none;
   }
 }
-
-/* @media screen and (max-width: 1680px) {
-  header {
-    height: 100vh;
-  }
-
-  .me {
-    height: 50%;
-    width: 50%;
-    left: calc(50% - 12.4rem);
-    margin-top: 25%;
-  }
-} */

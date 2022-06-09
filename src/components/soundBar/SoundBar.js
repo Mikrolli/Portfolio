@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { keyframes } from 'styled-components';
-
 import music from '../../assets/GM.mp3';
 
 const Box = styled.div`
@@ -26,7 +25,7 @@ z-index: 25;
 &>*:nth-child(5){
   animation-delay: 0.8s;
 }
-`
+`;
 
 const play = keyframes`
 0%{
@@ -38,7 +37,7 @@ const play = keyframes`
 100%{
   transform: scaleY(1);
 }
-`
+`;
 
 const Line = styled.span`
 background: var(--color-bg-variant);
@@ -49,7 +48,7 @@ animation-play-state: ${props => props.click ? 'running' : 'paused'};
 height: 1rem;
 width: 5px;
 margin: 0 0.1rem;
-`
+`;
 
 const SoundBar = () => {
 
@@ -73,7 +72,6 @@ const SoundBar = () => {
       <Line click={click} />
       <Line click={click} />
       <Line click={click} />
-
       <audio src={music} ref={ref} loop />
     </Box>
   );

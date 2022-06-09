@@ -4,22 +4,6 @@
   gap: 15%;
 }
 
-/*==== TEST ====*/
-/* .about__item {
-  background: var(--color-bg-variant);
-  padding: 1.3rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-  color: var(--color-white);
-}
-
-.about__item-image {
-  border-radius: 1.5rem;
-  overflow: hidden;
-} */
-
-
 /* Фотографии */
 .about__me {
   width: 100%;
@@ -98,7 +82,7 @@
 /* Медиазапросы малые девайсы */
 @media screen and (max-width: 600px) {
   .about__me {
-    width: 65%;
+    width: 75%;
     margin:  0 auto 3rem;
   }
 
