@@ -33,7 +33,7 @@ export const PortfolioList =[
     image: 'https://res.cloudinary.com/dxoxemiet/image/upload/c_scale,h_208,w_360/v1654625977/Screenshot_1_nxyl6e.png',
     title: 'Фермерские продукты(React)',
     github: 'https://github.com/Mikrolli/Farm-react',
-    demo: 'https://farm-react.vercel.app/'
+    demo: 'https://yar-servic.vercel.app/'
   },
   {
     id: 6,
