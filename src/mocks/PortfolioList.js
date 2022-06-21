@@ -39,7 +39,7 @@ export const PortfolioList =[
     id: 6,
     image: 'https://res.cloudinary.com/dxoxemiet/image/upload/c_scale,h_208,w_360/v1655544448/Screenshot_2_vlradv.png',
     title: 'В разработке',
-    github: 'https://github.com/Mikrolli/YarServic',
-    demo: 'https://vercel.com/mikrolli/yar-servic'
-  },
+    github: 'https://github.com/Mikrolli/YS',
+    demo: 'https://ys-seven.vercel.app/'
+  }
 ]
